@@ -1,0 +1,90 @@
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="./stup.css">
+    <title>Document</title>
+    <style>
+    .boxed
+       {
+        margin-top:40px;
+        margin-left:400px;
+        width: 400px;
+        border:3px solid gray;
+        padding: 40px;
+        background-color:lightseagreen;
+        border-style: solid;
+        border-radius: 20px;
+        border-width: 1px;
+        overflow-y: hidden;
+       }
+       .h3
+       {
+        text-align: center;
+        color:darkblue;
+       }
+       .btn
+       {
+        width:80px;
+        background-color:lightslategrey;
+        color:black;
+        height:30px;
+      border-radius: 40px;
+       }
+    </style>
+    <script>
+        function fun()
+        {
+            document.getElementById('ho').innerHTML="STUDENT NAME:"+document.getElementById('student name').value; 
+            document.getElementById('ho1').innerHTML="COLLEGE NAME:"+document.getElementById('college name').value;
+            document.getElementById('ho2').innerHTML="EMAIL:"+document.getElementById('email').value; 
+            document.getElementById('ho3').innerHTML="GENDER:"+document.getElementsByName('gender').value;
+            document.getElementById('ho4').innerHTML="DATE OF BIRTH:"+document.getElementById('dob').value;
+            
+        }
+    </script>
+</head>
+<body>
+    <b><h1 class="h3">STUDENT ENROLLMENT FORM</h1></b>
+      <div class="boxed">
+          <div class="a">
+          <form >
+              <div class="b">
+            <label for="student name">STUDENT NAME :</label>
+            <input type="text" name="student name" id="student name" class="student name">
+              </div><pre></pre>
+        <div class="b">
+            <label for="college name">COLLEGE NAME :</label>
+            <input type="text" name="college name" id="college name" class="college name" >
+        </div><pre></pre>
+        <div class="b">
+            <label for="email">EMAIL :</label>
+            <input type="text" name="email" id="email" class="email" >
+        </div><pre></pre>
+        <div class="b">
+            <label for="gender">GENDER :</label>
+            <input type="radio" name="gender" id="gender1" class="gender" value="MALE">MALE
+            <input type="radio" name="gender" id="gender" class="gender" value="FEMALE">FEMALE
+        </div><pre></pre>
+        <div class="b">
+            <label for="dob">DATE OF BIRTH :</label>
+            <input type="date" name="dob" id="dob" class="dob"><br>
+        </div><pre></pre>
+        <input type="button" value="SUBMIT" class="btn" onclick="fun()">
+           </div><pre></pre>
+           </form>
+           </div>
+        <div class="y">
+            <p><b>THE DETAILS ARE:</b></p><br>
+             <p id="ho"></p><br>
+             <p id="ho1"></p><br>
+             <p id="ho2"></p><br>
+             <p id="ho3"></p><br>
+             <p id="ho4"></p><br>
+            
+        </div><pre></pre>
+      <a href="reis.html" target="_new"class="bt"><button class="btn">BACK</button></a>
+      </div>
+</body>
